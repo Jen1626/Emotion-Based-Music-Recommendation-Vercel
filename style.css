@@ -1,0 +1,26 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0b0b12;color:#f7f7fb;min-height:100vh}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 7%;border-bottom:1px solid #262633}
+.brand{font-size:28px;font-weight:800}.brand span{margin-left:5px}.tag{color:#a7a7b6;font-size:14px}
+main{width:min(1120px,86%);margin:0 auto}
+.hero{min-height:70vh;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}
+.eyebrow{font-size:12px;letter-spacing:.16em;color:#aaaabc;font-weight:700}
+.hero h1{font-size:clamp(52px,8vw,92px);line-height:.95;margin:18px 0}
+.hero h1 span{color:#bba8ff}.lead{max-width:650px;color:#b8b8c7;font-size:18px;line-height:1.7}
+button{border:0;border-radius:14px;padding:15px 22px;background:#bba8ff;color:#14121c;font-weight:800;font-size:16px;cursor:pointer}
+button:disabled{opacity:.6;cursor:not-allowed}
+.status,.muted,.hint,.privacy{color:#9898aa;line-height:1.5}
+.intro-card,.card{background:#15151f;border:1px solid #292936;border-radius:24px;padding:28px}
+.intro-card{text-align:center}.emoji{font-size:100px;margin:20px}
+.dashboard{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:50px 0}
+.hidden{display:none!important}
+.card-head{display:flex;justify-content:space-between;color:#aaaabc;font-size:12px;font-weight:800;letter-spacing:.12em;margin-bottom:18px}
+video{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;background:#09090d}
+#emotion{font-size:48px;font-weight:800;margin:10px 0 5px}
+.card hr{border:0;border-top:1px solid #2a2a35;margin:26px 0}
+.song{display:flex;gap:18px;align-items:center}.song img,.album-placeholder{width:120px;height:120px;border-radius:14px;object-fit:cover;background:#232331}
+.song img{display:none}.song img.show{display:block}.album-placeholder{display:grid;place-items:center;font-size:44px;color:#bba8ff}
+.spotify-link{display:none;color:#bba8ff;font-weight:700;text-decoration:none}.spotify-link.show{display:inline-block}
+.privacy{padding:20px 0 50px;text-align:center}
+footer{text-align:center;color:#777789;padding:28px;border-top:1px solid #262633;font-size:13px}
+@media(max-width:800px){.hero,.dashboard{grid-template-columns:1fr}.hero{padding:55px 0}.hero h1{font-size:60px}}
