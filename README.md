@@ -44,6 +44,4 @@ The application still works with demo fallback recommendations without these var
 
 Use the HTTPS Vercel deployment URL and click **Start Mood Detection**. Allow camera access when the browser asks.
 
-## Project
 
-Moodrix — Emotion-Based Music Recommendation
