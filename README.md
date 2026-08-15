@@ -1,5 +1,7 @@
 # Moodrix — Emotion-Based Music Recommendation
 
+**Live Demo:** https://emotion-based-music-recommendation-fawn.vercel.app/
+
 Moodrix is an AI-powered music recommendation web application that uses facial-expression recognition in the browser to detect a user's current emotion and recommend music that matches the detected mood.
 
 ## Features
