@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Moodrix | Emotion-Based Music Recommendation</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.js"></script>
+  <script defer src="/script.js"></script>
+</head>
+<body>
+<header>
+  <div class="brand">Moodrix<span>♪</span></div>
+  <div class="tag">AI • Emotion • Music</div>
+</header>
+
+<main>
+  <section id="landing" class="hero">
+    <div>
+      <p class="eyebrow">PERSONALIZED MUSIC EXPERIENCE</p>
+      <h1>Your mood.<br><span>Your music.</span></h1>
+      <p class="lead">
+        Moodrix uses facial-expression recognition in your browser to detect
+        your current mood and recommend music that matches it.
+      </p>
+      <button id="startBtn" type="button">Start Mood Detection</button>
+      <p id="startStatus" class="status">Click Start and allow camera access.</p>
+    </div>
+
+    <div class="intro-card">
+      <div class="emoji">😊</div>
+      <p>Discover music based on how you feel.</p>
+    </div>
+  </section>
+
+  <section id="dashboard" class="dashboard hidden">
+    <div class="card">
+      <div class="card-head">
+        <span>LIVE CAMERA</span>
+        <span id="cameraState">Starting...</span>
+      </div>
+      <video id="video" autoplay muted playsinline></video>
+      <p class="hint">Keep your face visible and look toward the camera.</p>
+    </div>
+
+    <div class="card">
+      <p class="eyebrow">DETECTED EMOTION</p>
+      <div id="emotion">Waiting...</div>
+      <p id="confidence" class="muted">No face detected yet.</p>
+
+      <hr>
+
+      <div class="song">
+        <div class="album-placeholder" id="albumPlaceholder">♪</div>
+        <img id="albumArt" alt="Album artwork">
+        <div>
+          <p class="eyebrow">RECOMMENDED TRACK</p>
+          <h2 id="songName">Waiting for your mood...</h2>
+          <p id="artist" class="muted">—</p>
+          <p id="album" class="muted"></p>
+          <a id="spotify" target="_blank" rel="noopener noreferrer"
+             class="spotify-link">Open in Spotify</a>
+        </div>
+      </div>
+
+      <p id="apiStatus" class="status"></p>
+    </div>
+  </section>
+
+  <p class="privacy">
+    <b>Privacy:</b> facial-expression analysis runs in your browser.
+    Camera frames are not uploaded to the Moodrix backend.
+  </p>
+</main>
+
+<footer>Moodrix • Emotion-Based Music Recommendation</footer>
+</body>
+</html>
